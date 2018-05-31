@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+
+
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+* {
+    font-family: 'Anton', sans-serif;
+}
+
+section.one {
+    height: 100vh;
+    animation: pulse 40s infinite;
+    
+
+}
+
+@keyframes pulse {
+    0% {
+      background-color: rgb(2, 2, 2);
+    }
+ 
+    
+    50% {
+        background-color: rgb(54, 66, 80);
+      }
+
+    100% {
+        background-color: black;
+    }
+
+    
+  }
+
+.landing {
+    height: 94%;
+    //background-image: url(back1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    //filter: contrast(1.5);
+    position: relative;
+    //opacity: 0.9;
+    //background-color: aquamarine;
+    animation: pulse 5s infinite;
+
+
+
+}
+
+.landing img {
+    height: 92.05vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    opacity: 0.77;
+}
+
+.myimage {
+    position: relative;
+    padding: 90px;
+
+}
+
+
+
+
+.imagersp {
+    border: 5px solid white;
+    border-radius: 10%;
+    position: absolute;
+    object-fit: cover;
+    left: 9em;
+}
+
+
+
+
+
+.typing {
+    position: relative;
+    right: 10;
+    font-family: 'Pacifico', cursive;
+}
+
+.typing span {
+    font-family: 'Pacifico', cursive;
+    //text-transform: uppercase;
+    font-size: 6em;
+}
+
+
+.element {
+    //text-transform: uppercase;
+}
+
+.introduction img {
+    border: 1px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+
+
+.my-abs p{
+    font-family: 'Comfortaa', cursive;
+    //font-weight: 1em;
+    //font-size: 1.07em;
+}
+
+
+
+.blogcs {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+    
+    background: url(back2.jpg);
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+footer {
+    animation: pulse 15s infinite;
+}
+
+
+
+
+
+
+
+
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    color: white;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .typing span{
+        font-size: 2em;
+        color: rgba(4, 37, 39, 0.637);
+        font-family: 'Kavivanar', cursive;
+        text-transform: none;
+    }
+
+    .typing {
+        border: 5px solid white;
+        height: 70vh;
+    }
+    .landing {
+        height: 100vh;
+    }
+
+    .landing img{
+        filter: blur(2.0px) grayscale(70%);
+        
+    }
+
+    .responsive {
+        height: 50px;
+        width: 30px;
+    }
+
+    
+
+    .typed-cursor {
+        color: white;
+    }
+}
