@@ -31,17 +31,24 @@ section.one {
 
 @keyframes pulse {
     0% {
-      background-color: rgb(2, 2, 2);
-    }
- 
-    
-    50% {
-        background-color: rgb(54, 66, 80);
-      }
+    background-color: #510d21;
+  }
 
-    100% {
-        background-color: black;
-    }
+  25% {
+    background-color: #3a033f;
+  }
+
+  /*50%{
+    background-color: #840306;
+
+  }*/
+  75% {
+    background-color: #025968;
+  }
+
+  100% {
+    background-color: #422202;
+  }
 
     
   }
